@@ -1,0 +1,8 @@
+# Cloudflare wrangler 로컬 캐시
+.wrangler/
+
+# 빌드 시 자동 생성되는 배포 폴더 (Cloudflare가 알아서 만듦)
+public/
+
+# Node
+node_modules/

@@ -1,5 +1,4 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
 name = "golf-reservation-lesson"
-compatibility_date = "2026-03-06"
-
-[assets]
-directory = "./"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-05-21"
