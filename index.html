@@ -337,7 +337,7 @@
 
     <script>
         const RESERVATION_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScjus1bW9ISCwXwvv5Td8MWjp7u3Qed5fi6lA_9TTPyKAgZRg/viewform';
-        const BRANCH_FIELD_ID = 'entry.757779451';
+        const BRANCH_FIELD_ID = 'entry.99562409';
 
         function openInfoModal() { document.getElementById('infoModal').classList.add('modal-open'); }
         function closeInfoModal() { document.getElementById('infoModal').classList.remove('modal-open'); }
@@ -359,7 +359,8 @@
             const url = new URL(RESERVATION_FORM_URL);
             url.searchParams.set('usp', 'pp_url');
             url.searchParams.set(BRANCH_FIELD_ID, branchName);
-            window.open(url.toString(), '_blank', 'noopener');
+            // 카카오톡·인스타 인앱 브라우저는 window.open(팝업)을 차단하므로 같은 탭에서 이동
+            location.href = url.toString();
             return false;
         }
     </script>
